@@ -1,0 +1,6 @@
+/*!
+*   typesettings v0.1.0
+*   
+*   Copyright (c) initialyear-atualyear  ()
+*   Released under the MIT license
+*/

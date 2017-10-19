@@ -1,0 +1,19 @@
+{
+  "generator-swill-boilerplate": {
+    "projectName": "typesettings",
+    "projectDescription": "",
+    "projectHomepage": "",
+    "keywords": [],
+    "language": "en",
+    "authorName": "",
+    "authorEmail": "",
+    "authorHomepage": "",
+    "githubUser": "",
+    "handlebars": false,
+    "settingFolder": false,
+    "preprocessor": "stylus",
+    "options": [],
+    "features": [],
+    "files": []
+  }
+}
