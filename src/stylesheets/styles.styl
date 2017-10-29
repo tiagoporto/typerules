@@ -1,30 +1,10 @@
 $debug-vertical-rhythm = true
 @import "typerule.styl"
 
-body
-  box-sizing: border-box
+set-rhythm()
 
-h1
-  adjust-font-size-to(36px)
-  rhythm-margins(1, 1)
-
-// h2
-//   margin-leader(1)
-//   padding-leader(2)
-
-// h3
-//   adjust-font-size-to(18px)
-//   margin-leader(1)
-//   padding-trailer(1)
-//   margin-trailer(1)
-
-// h4
-//   rhythm(1, 1, 1, 1)
-
-div
-  height: calculates-rhythm-units(1)
-  apply-side-rhythm-border(top)
-  // rhythm-borders(2px)
+// body
+//   box-sizing: border-box
 
 // @import "typesettings/_settings.styl"
 // @import "typesettings/_internal.styl"

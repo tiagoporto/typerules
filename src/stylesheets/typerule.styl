@@ -1,7 +1,7 @@
 /*!
-*   typesettings v0.1.0
+*   Typerules v0.1.0
 *
-*   Copyright (c) 2017-2017 Tiago Porto (http://tiagoporto.com)
+*   Copyright (c) 2017 Tiago Porto (http://tiagoporto.com)
 *   Released under the MIT license
 */
 
@@ -9,6 +9,7 @@
 @import "_web-fonts.styl"
 @import "_vertical-rhythm.styl"
 @import "_functions.styl"
+@import "_rhythm.styl"
 
 html {
   /* Stops devices from scaling up text. */
@@ -60,6 +61,8 @@ html {
 body
   font: normal normal $base-font-size\/remove-unit(rem($base-line-height)) $font-family-base
   color: $base-text-color
+  margin: 0
+  padding: 0
   text-rendering: optimizeLegibility
   -webkit-font-smoothing: antialiased
   -moz-osx-font-smoothing: grayscale

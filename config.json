@@ -41,17 +41,11 @@
     }
   },
 
-  "components": true,
-
   "jQuery": false,
 
   "lintCSS": false,
 
-  "lintJS": false,
-
-  "inlineSVG": false,
-
-  "handlebars": false,
+  "lintJS": true,
 
   "autoprefixerBrowsers": [
     "ie > 7",
