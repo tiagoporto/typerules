@@ -41,11 +41,11 @@
     }
   },
 
-  "jQuery": false,
-
-  "lintCSS": false,
+  "lintCSS": true,
 
   "lintJS": true,
+
+  "svgPrefixClass": ".icon-",
 
   "autoprefixerBrowsers": [
     "ie > 7",
