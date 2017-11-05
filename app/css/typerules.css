@@ -1,14 +1,7 @@
 /*!
-*   typesettings v0.1.0
-*   
-*   Copyright (c) initialyear-atualyear  ()
-*   Released under the MIT license
-*/
-
-/*
-*   typesettings v0.1.0
+*   Typerules v0.1.0
 *
-*   Copyright (c) 2017-2017 Tiago Porto (http://tiagoporto.com)
+*   Copyright (c) 2017 Tiago Porto (http://tiagoporto.com)
 *   Released under the MIT license
 */
 
@@ -20,6 +13,8 @@ html { /* Stops devices from scaling up text. */
 body {
 	font: normal normal 16px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	color: #000;
+	margin: 0;
+	padding: 0;
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
