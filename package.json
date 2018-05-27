@@ -33,7 +33,9 @@
     "test": "mocha './{,!(node_modules)/**/}*.test.js' test/**/*.js test/*.js",
     "test-w": "npm test -- --watch",
     "coveralls": "nyc --reporter=text-lcov npm test | coveralls",
-    "precommit": "npm run lint-fix && npm run lint"
+    "precommit": "npm run lint-fix && npm run lint",
+    "tag": "git tag v$npm_package_version",
+    "postpublish": "npm run tag && git push --tags"
   },
   "main": "",
   "files": [],
