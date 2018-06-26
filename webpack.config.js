@@ -22,8 +22,11 @@ const config = {
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
     new HtmlWebpackPlugin({
-      title: 'Custom template',
       template: path.join(__dirname, 'src/index.html')
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'test.html',
+      template: path.join(__dirname, 'src/test.html')
     })
   ],
   devServer: {
