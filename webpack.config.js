@@ -1,9 +1,14 @@
 // webpack.config.js
+const path = require('path')
 const webpack = require('webpack')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 const config = {
+  entry: {
+    app: path.join(__dirname, 'src/index.js')
+  },
   output: {
-    filename: 'scripts.js'
+    filename: '[name].bundle.js'
   },
   module: {
     rules: [
@@ -15,12 +20,22 @@ const config = {
     ]
   },
   plugins: [
-    new webpack.DefinePlugin({
-      'process.env': {
-        'NODE_ENV': JSON.stringify(process.env.NODE_ENV)
-      }
+    new webpack.HotModuleReplacementPlugin(),
+    new HtmlWebpackPlugin({
+      title: 'Custom template',
+      template: path.join(__dirname, 'src/index.html')
     })
-  ]
+  ],
+  devServer: {
+    open: true,
+    overlay: true,
+    inline: true,
+    watchContentBase: true,
+    hot: true,
+    contentBase: [
+      path.join(__dirname, 'src')
+    ]
+  }
 }
 
 module.exports = config
