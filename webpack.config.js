@@ -1,5 +1,4 @@
 // webpack.config.js
-
 const webpack = require('webpack')
 
 const config = {
@@ -11,11 +10,7 @@ const config = {
       {
         test: /\.(js|jsx)$/,
         exclude: /(node_modules)/,
-        loader: 'babel-loader',
-        query: {
-          presets: [
-            ['env']
-          ]}
+        loader: 'babel-loader'
       }
     ]
   },
@@ -24,10 +19,6 @@ const config = {
       'process.env': {
         'NODE_ENV': JSON.stringify(process.env.NODE_ENV)
       }
-    }),
-    new webpack.ProvidePlugin({
-      $: 'jquery',
-      jQuery: 'jquery'
     })
   ]
 }

@@ -9,7 +9,6 @@
 bower.json
 config.json
 gulpfile.babel.js
-karma.conf.js
 yarn.lock
 webpack.config.js
 
