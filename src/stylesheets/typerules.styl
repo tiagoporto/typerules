@@ -11,56 +11,59 @@
 @import "_functions.styl"
 @import "_rhythm.styl"
 
-html {
+/*!
+*
+* Box model reset
+* http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+*
+*/
+*, *:before, *:after
+  box-sizing: inherit
+
+$pseudo-elements
+  content: ""
+  position: absolute
+  top: 0
+  left: 0
+  bottom: 0
+  right: 0
+  width: 100%
+  pointer-events: none
+
+html
   /* Stops devices from scaling up text. */
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-  if ($debug-vertical-rhythm == true){
+  -webkit-text-size-adjust: 100%
+  -ms-text-size-adjust: 100%
+  font-size: 100%
+  box-sizing: border-box
+
+  if $debug-vertical-rhythm
     position: relative
 
-    &::before,
-    &::after {
-      content: ""
-      position: absolute
-      top: 0
-      left: 0
-      bottom: 0
-      right: 0
-      width: 100%
-      display: none
-    }
+    if $show-secondary-debug-line
+      &:before,
+      &:after
+        @extends $pseudo-elements
+    else
+      &:before
+        @extends $pseudo-elements
 
-    &::before {
+    &:before
       z-index: 100000
-      background-image: -webkit-linear-gradient(rgba(233, 0, 0, .8) 1px, rgba(0, 0, 0, 0) 1px)
-      background-image: linear-gradient(rgba(233, 0, 0, .8) 1px, rgba(0, 0, 0, 0) 1px)
-      if(support) {
-        background-size: 100% $base-line-height
-      }
+      background-image: linear-gradient($debug-color-line.primary 1px, rgba(0, 0, 0, 0) 1px)
       background-size: 100% rem($base-line-height)
-    }
 
-    // &::after {
-    //   z-index: 99999
-    //   background-image: -webkit-linear-gradient(rgba(0, 233, 0, .8) 1px, rgba(0, 0, 0, 0) 1px)
-    //   background-image: linear-gradient(rgba(0, 233, 0, .8) 1px, rgba(0, 0, 0, 0) 1px)
-    //   if(support) {
-    //     background-size: 100% ($base-line-height / 4)
-    //   }
-    //   background-size: 100% rem($base-line-height / 4)
-    // }
+    if $show-secondary-debug-line
+      &:after
+        z-index: 99999
+        background-image: linear-gradient($debug-color-line.secondary 1px, rgba(0, 0, 0, 0) 1px)
+        background-size: 100% rem($base-line-height / $debug-line-divisions)
 
-    &::before,
-    &::after {
-      display: block
-      pointer-events: none
-    }
-  }
-}
 
 body
-  font: normal normal $base-font-size\/remove-unit(rem($base-line-height)) $font-family-base
-  color: $base-text-color
+  font: normal normal $base-font-size\/rem($base-line-height) $font-family-base
+  background-color: $color.bg
+  color: $color.font
   margin: 0
   padding: 0
   text-rendering: optimizeLegibility
@@ -76,9 +79,9 @@ body
 *
 */
 @media only screen and (-webkit-min-device-pixel-ratio: 1.25),\
-    only screen and ( min-device-pixel-ratio: 1.25),\
-    only screen and ( min-resolution: 200dpi),\
-    only screen and ( min-resolution: 1.25dppx)
+  only screen and ( min-device-pixel-ratio: 1.25),\
+  only screen and ( min-resolution: 200dpi),\
+  only screen and ( min-resolution: 1.25dppx)
 
-    body
-        -webkit-font-smoothing: subpixel-antialiased
+  body
+      -webkit-font-smoothing: subpixel-antialiased

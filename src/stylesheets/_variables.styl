@@ -1,37 +1,44 @@
-// Use em units to support < ie11
-$support := true
 
-// Color
-$bg-color := #FFF
-$selection-color := #FFF
-$selection-bg-color := $primary-color
+// Colors
+$color ?= {
+  bg: #FFF
+  font: #000
+}
 
-// Paths
-$font-path := "../fonts/"
+$selection-color ?= {
+  bg: $color.font,
+  font: $color.bg
+}
+
+$debug-color-line ?= {
+  primary: rgba(233, 0, 0, .8)
+  secondary: rgba(0, 233, 0, .6)
+}
 
 // Typography
-$font-family-serif := Georgia, "Times New Roman", Times, serif
-$font-family-sans := -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif
-$font-family-mono := 'Lucida Console', Monaco, "Courier New", Courier, monospace
-$font-family-base := $font-family-sans
+$font-family-serif ?= Georgia, "Times New Roman", Times, serif
+$font-family-sans ?= -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif
+$font-family-mono ?= 'Lucida Console', Monaco, "Courier New", Courier, monospace
+$font-family-base ?= $font-family-sans
 
-$base-text-color := #000
 
-$font-size-h1 := 36px
-$font-size-h2 := 32px
-$font-size-h3 := 30px
-$font-size-h4 := 28px
-$font-size-h5 := 24px
-$font-size-h6 := 20px
-
-$header-weight = bold
+$header ?= {
+  weight: bold
+  h1: 36px
+  h2: 32px
+  h3: 30px
+  h4: 28px
+  h5: 24px
+  h6: 20px
+}
 
 // Vertical Rhythmn
-$debug-vertical-rhythm := false
-$debug-color-line := #000
+$debug-vertical-rhythm ?= true
+$show-secondary-debug-line ?= false
 
+$debug-line-divisions ?= 4
 
-// The base font size.
+// The default base font size.
 $base-font-size ?= 16px
 
 // The base line height determines the basic unit of vertical rhythm.
@@ -40,11 +47,7 @@ $base-line-height ?= 24px
 // Set the default border style for rhythm borders.
 $default-rhythm-border-style ?= solid black
 
-// The default font size in all browsers.
-$browser-default-font-size = 16px
-
-// Set to false if you want to use absolute pixels in sizing your typography.
-$relative-font-sizing ?= true
+$header-weight ?= bold
 
 // Allows the `adjust-font-size-to` mixin and the `lines-for-font-size` function
 // to round the line height to the nearest half line height instead of the
@@ -53,3 +56,12 @@ $round-to-nearest-half-line ?= false
 
 // Ensure there is at least this many pixels of vertical padding above and below the text.
 $min-line-padding ?= 2px
+
+
+/* Support */
+
+// Use em units to support < ie11
+$support ?= true
+
+// Set to false if you want to use absolute pixels in sizing your typography.
+$relative-font-sizing ?= true
