@@ -1,16 +1,17 @@
-font-face(font-name, filepath)
+font-face(font-name, filepath, unicode-range)
   @font-face {
-      font-family: font-name;
-      font-style: normal;
-      font-weight: normal;
-      font-stretch: normal;
+    font-family: font-name;
+    font-style: normal;
+    font-weight: normal;
+    font-stretch: normal;
 
-      src: url(filepath + '.eot');  /* IE9 Compat Modes */
+    src: url(filepath + '.eot');  /* IE9 Compat Modes */
+    src: local(font-name), /* Set Fallback Local Font */
+          url(filepath + '.eot?#iefix') format('embedded-opentype'), /*IE6-IE8*/\
+          url(filepath + '.woff2') format('woff2'), /*Super Modern Browsers*/ \
+          url(filepath + '.woff') format('woff'), /*Modern Browsers*/\
+          url(filepath + '.ttf')  format('truetype'), /*Safari, Android, iOS*/\
+          url(filepath + '.svg#svgFontName') format('svg'); /*Legacy iOS*/
 
-      src: local(filepath), /* Set Fallback Local Font */
-           url(filepath + '.eot?#iefix') format('embedded-opentype'), /*IE6-IE8*/\
-           url(filepath + '.woff2') format('woff2'), /*Super Modern Browsers*/ \
-           url(filepath + '.woff') format('woff'), /*Modern Browsers*/\
-           url(filepath + '.ttf')  format('truetype'), /*Safari, Android, iOS*/\
-           url(filepath + '.svg#svgFontName') format('svg'); /*Legacy iOS*/
+    unicode-range: unicode-range;
   }
