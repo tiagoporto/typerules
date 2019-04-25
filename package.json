@@ -16,49 +16,44 @@
     "name": "Tiago Porto",
     "url": "http://tiagoporto.com"
   },
-  "main": "",
   "repository": {
     "type": "git",
     "url": "https://github.com/tiagoporto/typerules.git"
   },
+  "main": "./index.styl",
   "license": "MIT",
   "scripts": {
-    "start": "webpack-dev-server --mode=development",
-    "build": "webpack --mode=production",
-    "deploy": "npm run build && gh-pages -d build",
-    "lint": "eslint .",
-    "lint-fix": "npm run lint -- --fix",
-    "cover": "nyc --reporter=lcov npm test",
-    "coveralls": "nyc --reporter=text-lcov npm test | coveralls",
-    "test": "mocha './{,!(node_modules)/**/}*.test.js' test/**/*.js test/*.js",
-    "test-watch": "npm test -- --watch",
-    "precommit": "npm run lint",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "lint": "",
     "tag": "git tag v$npm_package_version",
     "postpublish": "npm run tag && git push --tags"
   },
   "devDependencies": {
-    "babel-core": "^6.26.3",
-    "babel-loader": "^7.1.4",
-    "babel-preset-env": "^1.7.0",
-    "eslint": "^5.0.0",
-    "eslint-config-standard": "^11.0.0",
-    "eslint-plugin-import": "^2.13.0",
-    "eslint-plugin-node": "^6.0.1",
-    "eslint-plugin-promise": "^3.8.0",
-    "eslint-plugin-standard": "^3.1.0",
-    "html-webpack-plugin": "^3.2.0",
-    "webpack": "^4.12.1",
-    "webpack-cli": "^3.0.8",
-    "webpack-dev-server": "^3.1.4"
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-scripts": "3.0.0"
   },
-  "babel": {
-    "presets": [
-      "env"
-    ]
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint"
+    }
   },
   "eslintConfig": {
-    "extends": [
-      "standard"
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
     ]
   }
 }
