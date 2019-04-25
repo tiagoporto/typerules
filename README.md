@@ -1,68 +1,32 @@
-# Typerules
+# Typerules ![Open Source Love](https://github.com/ellerbrock/open-source-badges/blob/master/badges/open-source-v3/open-source.svg)
 
-[![Build Status](https://travis-ci.org/tiagoporto/typerules.svg)](https://travis-ci.org/tiagoporto/typerules)
-[![Coverage Status](https://img.shields.io/coveralls/tiagoporto/typerules.svg)](https://coveralls.io/github/tiagoporto/typerules)
-[![Dependencies Status](https://david-dm.org/tiagoporto/typerules.svg)](https://david-dm.org/tiagoporto/typerules)
-[![devDependencies Status](https://david-dm.org/tiagoporto/typerules/dev-status.svg)](https://david-dm.org/tiagoporto/typerules#info=devDependencies)
-[![NPM Downloads](https://img.shields.io/npm/dt/typerules.svg)](https://www.npmjs.com/package/typerules)
-[![Github Release](https://img.shields.io/github/release/tiagoporto/typerules.svg)](https://github.com/tiagoporto/typerules/releases)
-[![Github Issues](https://img.shields.io/github/issues/tiagoporto/typerules.svg)](https://github.com/tiagoporto/typerules/issues)
-[![Github License](https://img.shields.io/github/license/tiagoporto/typerules.svg)](https://raw.githubusercontent.com/tiagoporto/typerules/master/LICENSE.md)
+<p align="right">
+  <code>LIKED ? Leave a <a href="https://github.com/tiagoporto/gerador-validador-cpf/stargazers">⭐</a> : <a href="https://github.com/tiagoporto/gerador-validador-cpf/issues">😞</a></code>
+</p>
 
-A toolkit that sets typography settings, vertical rhythm, and  more.
+[![Release](https://img.shields.io/npm/v/typerules.svg?style=flat-square&label=release)](https://github.com/tiagoporto/typerules/releases)
+[![Downloads](https://img.shields.io/npm/dt/typerules.svg?style=flat-square)](https://www.npmjs.com/package/typerules)
+[![install size](https://packagephobia.now.sh/badge?p=typerules)](https://packagephobia.now.sh/result?p=typerules)
+[![License](https://img.shields.io/github/license/tiagoporto/typerules.svg?style=flat-square)](https://raw.githubusercontent.com/tiagoporto/typerules/master/LICENSE)
 
-## Table of Contents
+[![Build Status](https://img.shields.io/travis/com/tiagoporto/typerules/master.svg?label=tests&logo=travis&style=flat-square)](https://travis-ci.com/tiagoporto/typerules)
+[![devDependencies Status](https://img.shields.io/david/dev/tiagoporto/gerador-validador-cpf.svg?style=flat-square)](https://david-dm.org/tiagoporto/gerador-validador-cpf?type=dev)
 
-* [Features](#features)
-* [Folder Structure](#folder-structure)
-* [Dependencies](#dependencies)
-* [Installation](#installation)
-* [Running](#running)
-* [Contributing](#contributing)
-* [Credits](#credits)
-* [License](#license)
+> A toolkit that sets typography settings, vertical rhythm, and more.
 
 ## Features
 
-* {List all the project features}
-
-## Folder Structure
-
-```
-./
-├───┐
-│   ├─
-│   │
-│   └─
-│      │
-│      ├─
-│      │
-│      └─
-├──
-└──
-```
-
-## Dependencies
-
-{List the project dependencies}
+- {List all the project features}
 
 ## Installation
-```sh
-$ npm install
-```
 
-## Running
 ```sh
-$ gulp --compile
+npm i typerules
 ```
 
 ## Contributing
 
 [See how to contribute](CONTRIBUTING.md).
-
-## Credits
-
-{Write credits}
 
 ## License
 
