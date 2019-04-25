@@ -14,15 +14,13 @@
 
 > A toolkit that sets typography settings, vertical rhythm, and more.
 
-## Features
+_Work in Progress_
 
-- {List all the project features}
-
-## Installation
+<!-- ## Installation
 
 ```sh
 npm i typerules
-```
+``` -->
 
 ## Contributing
 
