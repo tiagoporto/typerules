@@ -16,11 +16,39 @@
 
 _Work in Progress_
 
-<!-- ## Installation
+## Installation
 
 ```sh
-npm i typerules
-``` -->
+npm i typerules@alpha
+```
+
+## Usage
+
+```stylus
+@import '~typerules'
+```
+
+## Options
+
+### Show grid
+
+```stylus
+$debug-vertical-rhythm = true
+
+@import '~typerules'
+```
+
+### Generate basic styles
+
+```stylus
+@import '~typerules'
+
+set-rhythm()
+```
+
+<!-- ## Settings -->
+
+<!-- ## Functions -->
 
 ## Contributing
 

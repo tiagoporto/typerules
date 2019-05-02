@@ -4,7 +4,6 @@
 .eslintrc
 .gitattributes
 .travis.yml
-.yo-rc.json
 
 bower.json
 config.json
@@ -12,9 +11,11 @@ gulpfile.babel.js
 yarn.lock
 webpack.config.js
 
+.github/
 .publish/
 .nyc_output/
 coverage/
+public/
 build/
 spec/
 src/

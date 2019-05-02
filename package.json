@@ -1,7 +1,7 @@
 {
   "name": "typerules",
-  "version": "0.1.0",
-  "description": "A toolkit that sets typography settings, vertical rhythm, and  more.",
+  "version": "1.0.0-alpha.0",
+  "description": "A typography toolkit that sets vertical rhythm and provides type functions.",
   "homepage": "http://tiagoporto.github.io/typerules",
   "keywords": [
     "typography",
@@ -28,6 +28,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "",
+    "_prepare": "npm run lint",
     "tag": "git tag v$npm_package_version",
     "postpublish": "npm run tag && git push --tags"
   },
