@@ -20,7 +20,10 @@
     "type": "git",
     "url": "https://github.com/tiagoporto/typerules.git"
   },
-  "main": "./index.styl",
+  "main": "index.styl",
+  "files": [
+    "lib/"
+  ],
   "license": "MIT",
   "scripts": {
     "start": "react-scripts start",
