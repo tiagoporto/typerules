@@ -5,12 +5,10 @@
 </p>
 
 [![Release](https://img.shields.io/npm/v/typerules.svg?style=flat-square&label=release)](https://github.com/tiagoporto/typerules/releases)
-[![Downloads](https://img.shields.io/npm/dt/typerules.svg?style=flat-square)](https://www.npmjs.com/package/typerules)
-[![install size](https://packagephobia.now.sh/badge?p=typerules)](https://packagephobia.now.sh/result?p=typerules)
-[![License](https://img.shields.io/github/license/tiagoporto/typerules.svg?style=flat-square)](https://raw.githubusercontent.com/tiagoporto/typerules/main/LICENSE)
+[![Downloads](https://img.shields.io/npm/d18m/typerules.svg?style=flat-square)](https://www.npmjs.com/package/typerules)
+[![install size](https://packagephobia.com/badge?p=typerules)](https://packagephobia.com/result?p=typerules)
 
-[![Build Status](https://img.shields.io/travis/com/tiagoporto/typerules/main.svg?label=tests&logo=travis&style=flat-square)](https://travis-ci.com/tiagoporto/typerules)
-[![devDependencies Status](https://img.shields.io/david/dev/tiagoporto/typerules.svg?style=flat-square)](https://david-dm.org/tiagoporto/typerules?type=dev)
+<!-- [![Build Status](https://img.shields.io/travis/com/tiagoporto/typerules/main.svg?label=tests&logo=travis&style=flat-square)](https://travis-ci.com/tiagoporto/typerules) -->
 
 > A toolkit that sets typography settings, vertical rhythm, and more.
 
@@ -52,7 +50,7 @@ set-rhythm()
 
 ## Contributing
 
-[See how to contribute](CONTRIBUTING.md).
+[Check how to contribute](https://github.com/tiagoporto/.github/blob/main/CONTRIBUTING.md).
 
 ## License
 
