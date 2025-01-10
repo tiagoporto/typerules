@@ -56,4 +56,4 @@ set-rhythm()
 
 ## License
 
-Typerules is released under the terms of the [MIT](LICENSE).
+This project is licensed under the [MIT License](LICENSE).
