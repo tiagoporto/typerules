@@ -30,17 +30,14 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "lint": "",
-    "_prepare": "npm run lint",
-    "tag": "git tag v$npm_package_version",
-    "postpublish": "npm run tag && git push --tags"
+    "lint": ""
   },
   "devDependencies": {
-    "@tiagoporto/dependabot-config": "^1.0.0",
-    "@tiagoporto/editor-config": "^1.0.0",
+    "@tiagoporto/dependabot-config": "^1.0.2",
+    "@tiagoporto/editor-config": "^1.1.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-scripts": "3.0.0"
+    "react-scripts": "5.0.1"
   },
   "husky": {
     "hooks": {
