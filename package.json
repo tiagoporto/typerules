@@ -25,6 +25,11 @@
     "lib/"
   ],
   "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=23",
+    "npm": ">=10"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
