@@ -31,6 +31,9 @@
     "npm": ">=10"
   },
   "scripts": {
+    "prepare": "husky",
+    "formatting:check": "prettier --check --ignore-unknown \"**/*\"",
+    "formatting": "npm run formatting:check -- --write",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -40,28 +43,12 @@
   "devDependencies": {
     "@tiagoporto/dependabot-config": "^1.0.2",
     "@tiagoporto/editor-config": "^1.1.0",
+    "@tiagoporto/prettier-config": "^1.1.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.3.0",
+    "prettier": "^3.4.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-scripts": "5.0.1"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run lint"
-    }
-  },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
   }
 }

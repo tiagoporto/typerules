@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react'
 
 function App() {
   return (
@@ -29,24 +29,24 @@ function App() {
 
         <div />
         <p>
-          First paragraph, <strong>consectetur</strong> adipisicing elit. Ipsam{" "}
-          <kbd>kbd tag</kbd> dolore deserunt laboriosam, perferendis quia earum{" "}
-          <kbd>kbd tag</kbd> quam accusamus consequuntur explicabo modi debitis{" "}
+          First paragraph, <strong>consectetur</strong> adipisicing elit. Ipsam{' '}
+          <kbd>kbd tag</kbd> dolore deserunt laboriosam, perferendis quia earum{' '}
+          <kbd>kbd tag</kbd> quam accusamus consequuntur explicabo modi debitis{' '}
           <mark>placeat</mark> eveniet blanditiis esse incidunt commodi
           assumenda. Enim repellendus vitae eaque distinctio velit quia modi,
           non maxime reiciendis amet ab temporibus! Aliquid illo natus,
           architecto minima saepe cupiditate autem dolor, odit! Dolorem beatae
           est iste incidunt quaerat delectus nobis error dignissimos numquam,
-          voluptatem necessitatibus <abbr title="Swill Boilerplate">SWBP</abbr>{" "}
+          voluptatem necessitatibus <abbr title="Swill Boilerplate">SWBP</abbr>{' '}
           exercitationem at sunt quidem voluptatibus nam facilis veniam nulla
-          odit dolorum pariatur, laboriosam?{" "}
+          odit dolorum pariatur, laboriosam?{' '}
           <em>
             Quam nisi non delectus perspiciatis veritatis harum iure maxime,
             quae voluptatibus.
           </em>
         </p>
         <p>
-          Second paragraph,{" "}
+          Second paragraph,{' '}
           <a href="https://www.npmjs.com/package/generator-swill-boilerplate">
             this is a link to NPM boilerplate package
           </a>
@@ -204,7 +204,7 @@ function App() {
         <address>
           <strong>Swill boilerplate</strong>
           <br />
-          Website:{" "}
+          Website:{' '}
           <a href="http://www.swillboileplate.rocks">swillboileplate.rocks</a>.
           <br />
           Tiago Porto
@@ -214,7 +214,7 @@ function App() {
           BRAZIL
         </address>
 
-        <div style={{ background: "red" }}>
+        <div style={{ background: 'red' }}>
           <p>twertwert</p>
           <p>twertwert</p>
           <p>twertwert</p>
@@ -350,7 +350,7 @@ function App() {
         </form>
       </main>
     </>
-  );
+  )
 }
 
-export default App;
+export default App
