@@ -35,12 +35,14 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "eject": "react-scripts eject",
-    "checks": "npm run formatting:check && npm run check-docs && npm run lint",
+    "checks": "npm run formatting:check && npm run check-docs && npm run lint && npm run lint:styles",
     "check-docs": "remark --frail . --ext md,markdown,mdx",
     "formatting:check": "prettier --check --ignore-unknown \"**/*\"",
     "formatting": "npm run formatting:check -- --write",
     "lint": "eslint --max-warnings 0",
     "lint:fix": "npm run lint -- --write",
+    "lint:styles": "stylelint \"**/*.{css,scss}\"",
+    "lint:styles:fix": "stylelint \"**/*.{css,scss}\" --fix",
     "test": "react-scripts test"
   },
   "devDependencies": {
@@ -51,6 +53,7 @@
     "@tiagoporto/eslint-config": "^2.6.0",
     "@tiagoporto/prettier-config": "^1.2.0",
     "@tiagoporto/remark-config": "^1.6.0",
+    "@tiagoporto/stylelint-config": "^1.1.0",
     "eslint": "^9.18.0",
     "globals": "^15.14.0",
     "husky": "^9.1.7",
@@ -60,6 +63,7 @@
     "react-dom": "^19.0.0",
     "react-scripts": "5.0.1",
     "remark": "^15.0.1",
-    "remark-cli": "^12.0.1"
+    "remark-cli": "^12.0.1",
+    "stylelint": "^16.13.2"
   }
 }
