@@ -11,6 +11,14 @@ on:
         ready_for_review, # PR was converted from draft to open
         converted_to_draft, # PR was converted from open to draft
       ]
+
+concurrency:
+  group: checks_${{ github.workflow }}_${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
 jobs:
   checks:
     runs-on: ubuntu-latest
