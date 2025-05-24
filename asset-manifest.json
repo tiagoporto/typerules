@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/typerules/static/css/main.71ce8fee.css",
+    "main.js": "/typerules/static/js/main.34a8187b.js",
+    "index.html": "/typerules/index.html",
+    "main.71ce8fee.css.map": "/typerules/static/css/main.71ce8fee.css.map",
+    "main.34a8187b.js.map": "/typerules/static/js/main.34a8187b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.71ce8fee.css",
+    "static/js/main.34a8187b.js"
+  ]
+}
