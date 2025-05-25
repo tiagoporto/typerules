@@ -7,7 +7,11 @@ on:
   push:
     branches: [main]
   pull_request:
-    types: [synchronize, opened, reopened, ready_for_review, converted_to_draft]
+    types:
+      - synchronize # PR was updated
+      - opened # PR was open
+      - reopened # PR was closed and is now open again
+      - ready_for_review # PR was converted from draft to open
 
 concurrency:
   group: check-docs_${{ github.workflow }}_${{ github.event.pull_request.number || github.ref }}
@@ -36,5 +40,5 @@ jobs:
       - name: Install Dependencies
         run: pnpm install --frozen-lockfile --ignore-scripts
 
-      - name: Check Docs
+      - name: Run Check Docs
         run: pnpm check-docs

@@ -38,11 +38,13 @@ jobs:
       - name: Install Dependencies
         run: pnpm install --frozen-lockfile --ignore-scripts
 
-      - name: Check format
-        run: pnpm format:check
+      - name: Formatting Check
+        run: pnpm formatting:check
 
-      # - name: Check Typing
-      #   run: npm run typecheck
+      - name: Typecheck
+        if: success() || failure()
+        run: pnpm typecheck
 
       # - name: Lint
-      #   run: npm run lint
+      #   if: success() || failure()
+      #   run: pnpm lint
