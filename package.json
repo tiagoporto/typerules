@@ -31,6 +31,7 @@
   },
   "type": "module",
   "scripts": {
+    "postinstall": "$CI = true || (dependabot-config && editor-config)",
     "prepare": "husky",
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -48,8 +49,8 @@
   "devDependencies": {
     "@commitlint/cli": "^19.7.1",
     "@commitlint/config-conventional": "^19.7.1",
-    "@tiagoporto/dependabot-config": "^1.5.1",
-    "@tiagoporto/editor-config": "^1.4.0",
+    "@tiagoporto/dependabot-config": "^2.0.0",
+    "@tiagoporto/editor-config": "^2.0.0",
     "@tiagoporto/eslint-config": "^4.6.1",
     "@tiagoporto/prettier-config": "^2.0.0",
     "@tiagoporto/remark-config": "^1.6.1",
