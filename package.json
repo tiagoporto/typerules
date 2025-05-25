@@ -36,6 +36,7 @@
     "lint:styles:fix": "stylelint \"**/*.{css,scss}\" --fix"
   },
   "devDependencies": {
+    "@anolilab/semantic-release-pnpm": "^1.1.11",
     "@commitlint/cli": "^19.7.1",
     "@commitlint/config-conventional": "^19.7.1",
     "@tiagoporto/dependabot-config": "^2.0.0",
@@ -58,6 +59,8 @@
     "remark": "^15.0.1",
     "remark-cli": "^12.0.1",
     "sass-embedded": "^1.89.0",
+    "semantic-release": "^24.2.5",
+    "semantic-release-monorepo": "github:tiagoporto/semantic-release-monorepo",
     "stylelint": "^16.14.1",
     "typescript": "^5.8.3"
   }

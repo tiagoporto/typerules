@@ -1,6 +1,6 @@
 {
   "name": "typerules",
-  "version": "1.0.0-alpha.0",
+  "version": "0.0.0-development",
   "description": "A typography toolkit that sets vertical rhythm and provides type functions.",
   "homepage": "http://tiagoporto.github.io/typerules",
   "keywords": [
@@ -27,5 +27,8 @@
   ],
   "license": "MIT",
   "type": "module",
-  "scripts": {}
+  "scripts": {
+    "release": "semantic-release",
+    "release:dry-run": "semantic-release --dry-run"
+  }
 }
