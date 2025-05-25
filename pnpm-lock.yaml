@@ -69,6 +69,8 @@ importers:
         specifier: ^5.8.3
         version: 5.8.3
 
+  packages/typerules: {}
+
 packages:
 
   '@alloc/quick-lru@5.2.0':

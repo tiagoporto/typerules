@@ -1,17 +1,7 @@
 {
-  "name": "typerules",
-  "version": "1.0.0-alpha.0",
-  "description": "A typography toolkit that sets vertical rhythm and provides type functions.",
+  "name": "typerules-root",
+  "private": true,
   "homepage": "http://tiagoporto.github.io/typerules",
-  "keywords": [
-    "typography",
-    "settings",
-    "vertical rhythm",
-    "toolkit",
-    "rules",
-    "stylus",
-    "sass"
-  ],
   "author": {
     "name": "Tiago Porto",
     "url": "http://tiagoporto.com"
@@ -20,10 +10,6 @@
     "type": "git",
     "url": "https://github.com/tiagoporto/typerules.git"
   },
-  "main": "index.styl",
-  "files": [
-    "lib/"
-  ],
   "license": "MIT",
   "engines": {
     "node": ">=23",
