@@ -5,12 +5,11 @@
   "homepage": "http://tiagoporto.github.io/typerules",
   "keywords": [
     "typography",
-    "settings",
     "vertical rhythm",
     "toolkit",
-    "rules",
-    "stylus",
-    "sass"
+    "typekit",
+    "sass",
+    "scss"
   ],
   "author": {
     "name": "Tiago Porto",
@@ -21,8 +20,13 @@
     "url": "https://github.com/tiagoporto/typerules.git",
     "directory": "packages/typerules"
   },
-  "main": "index.styl",
+  "exports": {
+    ".": "./index.scss",
+    "./utils": "./utils.scss"
+  },
   "files": [
+    "./index.scss",
+    "./utils.scss",
     "lib/"
   ],
   "license": "MIT",

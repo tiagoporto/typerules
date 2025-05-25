@@ -1,0 +1,16 @@
+@use '../utils' as utils;
+
+// Applies trailing whitespace as padding.
+@mixin padding-trailing($lines: 1) {
+  @include utils.apply-rhythm($lines, padding-bottom);
+}
+
+// Applies trailing whitespace as margin.
+@mixin margin-trailing($lines: 1) {
+  @include utils.apply-rhythm($lines, margin-bottom);
+}
+
+// Applies a trailing border.
+@mixin border-trailing($width: 1px, $lines: 1) {
+  @include apply-rhythm-borders($width, $lines, bottom);
+}

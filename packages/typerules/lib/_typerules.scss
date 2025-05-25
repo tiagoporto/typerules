@@ -1,0 +1,22 @@
+@use 'sass:map';
+@use 'sass:math';
+@use './vertical-rhythm' as rhythm;
+@use './utils/rem' as utils;
+@use './variables' as var;
+@use './styles';
+
+@if var.$set-typography or var.$set-form {
+  @include styles.global;
+}
+
+@if var.$set-typography {
+  @include styles.header;
+  @include styles.paragraph;
+  @include styles.blockquote;
+  @include styles.kbd;
+}
+
+// @if var.$set-print {}
+// @if var.$set-button {}
+// @if var.$set-form {}
+// @if var.$set-color {}

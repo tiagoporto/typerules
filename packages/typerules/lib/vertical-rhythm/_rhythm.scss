@@ -1,0 +1,20 @@
+@use './leading';
+@use './trailing';
+
+// Shorthand mixin to apply whitespace for top and bottom margins.
+@mixin rhythm-margins($leader: 1, $trailer: 1) {
+  @include leading.margin-leading($leader);
+  @include trailing.margin-trailing($trailer);
+}
+
+// Shorthand mixin to apply whitespace for top and bottom padding.
+@mixin rhythm-padding($leader: 1, $trailer: 1) {
+  @include leading.padding-leading($leader);
+  @include trailing.padding-trailing($trailer);
+}
+
+// Shorthand mixin to apply border and whitespace for top and bottom padding.
+@mixin rhythm-borders($width: 1px, $lines: 1) {
+  @include leading.leading-border($width, $lines);
+  @include trailing.trailing-border($width, $lines);
+}

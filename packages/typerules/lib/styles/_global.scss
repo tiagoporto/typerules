@@ -1,0 +1,27 @@
+@use 'sass:map';
+@use 'sass:math';
+@use '../utils/rem' as utils;
+@use '../variables' as var;
+
+@mixin global() {
+  html {
+    font-size: math.div(var.$base-font-size, 16px) * 100%;
+    text-size-adjust: 100%;
+  }
+
+  body {
+    padding: 0;
+    margin: 0;
+
+    // background-color: map.get(var.$color, 'background');
+    color: map.get(var.$color, 'font');
+    font: normal normal
+      #{var.$base-font-size}/#{utils.rem(var.$base-line-height)}
+      var.$font-family-base;
+    font-feature-settings: 'liga', 'kern';
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-decoration-skip-ink: auto;
+    text-rendering: optimizelegibility;
+  }
+}

@@ -1,0 +1,12 @@
+@use '../../variables' as var;
+
+@mixin kbd() {
+  kbd {
+    // padding: 0 0.2rem;
+    // border-radius: 3px;
+    // background-color: rgb(0 0 0 / 30%);
+    // color: #fff;
+    font-family: var.$font-family-mono;
+    vertical-align: bottom;
+  }
+}

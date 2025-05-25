@@ -1,0 +1,8 @@
+@use './calculates-rhythm-units' as calc;
+
+@mixin apply-rhythm($lines: 1, $property: margin) {
+  // if $support
+  //   {$property}-top: floor($lines * $base-line-height)
+
+  #{$property}: calc.calculates-rhythm-units($lines);
+}

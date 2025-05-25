@@ -1,0 +1,16 @@
+@use '../utils' as utils;
+
+// Applies leading whitespace as padding.
+@mixin padding-leading($lines: 1) {
+  @include utils.apply-rhythm($lines, padding-top);
+}
+
+// Applies leading whitespace as margin.
+@mixin margin-leading($lines: 1) {
+  @include utils.apply-rhythm($lines, margin-top);
+}
+
+// Applies a leading border.
+@mixin border-leading($width: 1px, $lines: 1) {
+  @include utils.apply-borders($width, $lines, top);
+}

@@ -1,0 +1,10 @@
+// Creates horizontal rules that obey the baseline.
+// [1] Zero outs the user agent border
+// hr {
+//   margin-top: emRhythm(4);
+//   margin-bottom: 0;
+//   border: none; // [1]
+//   border-top-color: $text-color;
+//   border-top-style: solid;
+//   rhythmBorderTop(1px, 4);
+// }

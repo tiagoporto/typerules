@@ -1,0 +1,14 @@
+// abbr
+//   text-decoration: underline
+
+//   // [1] https://developer.mozilla.org/en-US/docs/CSS/font-variant
+//   abbr {
+//     font-variant: small-caps; // [1]
+//     font-weight: 600;
+//     text-transform: lowercase;
+//   }
+
+//   // Cursor changed to a question mark when it has a title
+//   abbr[title]:hover {
+//     cursor: help;
+//   }

@@ -1,0 +1,22 @@
+// $input
+//   adjust-font-size-to($base-font-size)
+//   rhythm-borders(1px, .25, $base-font-size, solid lighten(#000, 60%))
+
+// input[type="text"]
+// input[type="search"]
+// input[type="email"]
+// input[type="number"]
+// input[type="password"]
+// select
+//   @extend $input
+//   height: rem($base-line-height)
+
+//   // &:read-only,
+//   // &:disabled
+//   //  background lighten(#000, 95%)
+
+// select
+//   width: auto
+
+// ::placeholder
+//   font-size: rem($base-font-size - 2)

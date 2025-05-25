@@ -1,0 +1,7 @@
+@use 'sass:math';
+@use '../variables' as var;
+
+// Convert pixel units to rem units
+@function rem($pixels) {
+  @return math.div($pixels, var.$base-font-size) * 1rem;
+}

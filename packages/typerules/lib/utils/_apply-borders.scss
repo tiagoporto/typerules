@@ -1,0 +1,20 @@
+@use './calculates-rhythm-units' as calc;
+@use './rem' as utils;
+
+// Applies a border and whitespace to any side without destroying the vertical rhythm.
+// The whitespace must be greater than the width of the border.
+@mixin apply-borders($width: 1px, $lines: 1, $side: null) {
+  @if $side {
+    // if $support
+    //   border-{$side}-width: $width
+    //   padding-{$side}: floor($lines * $base-line-height - $width)
+    border-#{$side}-width: utils.rem($width);
+    padding-#{$side}: calc.calculates-rhythm-units($lines, $offset: $width);
+  } @else {
+    // if $support
+    //   border-width: $width
+    //   padding: floor($lines * $base-line-height - $width)
+    padding: calc.calculates-rhythm-units($lines, $offset: $width);
+    border-width: utils.rem($width);
+  }
+}

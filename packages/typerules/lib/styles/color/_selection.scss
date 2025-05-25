@@ -1,0 +1,7 @@
+@use 'sass:map';
+@use '../../variables' as var;
+
+::selection {
+  background: map.get(var.$selection-color, 'background');
+  color: map.get(var.$selection-color, 'font');
+}

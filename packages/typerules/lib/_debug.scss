@@ -1,0 +1,59 @@
+@use 'sass:map';
+@use 'sass:color';
+@use './variables' as var;
+@use './utils' as utils;
+
+// Variables
+$debug-line-divisions: 4 !default;
+$debug: () !default;
+$debug: map.merge(
+  (
+    'enable': false,
+    'granular': false,
+    'subdivisions': 4,
+  ),
+  $debug
+);
+$debug-color-line: (
+  'primary': rgb(233 0 0 / 80%),
+  'secondary': rgb(0 233 0 / 60%),
+);
+
+%pseudo-elements {
+  position: absolute;
+  width: 100%;
+  content: '';
+  inset: 0;
+  pointer-events: none;
+}
+
+@if map.get($debug, 'enable') {
+  html {
+    position: relative;
+
+    &::before {
+      @extend %pseudo-elements;
+
+      z-index: 100000;
+      background-image: linear-gradient(
+        map.get($debug-color-line, 'primary') 1px,
+        rgb(0 0 0 / 0%) 1px
+      );
+      background-size: 100% utils.rem(var.$base-line-height);
+    }
+
+    @if map.get($debug, 'granular') {
+      &::after {
+        @extend %pseudo-elements;
+
+        z-index: 99999;
+        background-image: linear-gradient(
+          map.get($debug-color-line, 'secondary') 1px,
+          rgb(0 0 0 / 0%) 1px
+        );
+        background-size: 100%
+          utils.rem(var.$base-line-height / map.get($debug, 'subdivisions'));
+      }
+    }
+  }
+}

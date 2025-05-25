@@ -1,0 +1,48 @@
+@use 'sass:math';
+@use '../variables' as var;
+@use './calculates-rhythm-units' as calc;
+@use './rem' as utils;
+
+// Calculates the minimum multiple of rhythm units needed to contain the font-size.
+@function lines-for-font-size($font-size) {
+  $lines: if(
+    var.$round-to-nearest-half-line,
+    math.div(math.round(math.div($font-size, var.$base-line-height) * 2), 2),
+    math.ceil(math.div($font-size, var.$base-line-height))
+  );
+
+  // math.div(math.div(2 * $font-size, var.$base-line-height), 2),
+
+  @if $lines * var.$base-line-height - $font-size > var.$min-line-padding * 2 {
+    @return $lines;
+  }
+
+  @if var.$round-to-nearest-half-line {
+    @return $lines + 0.5;
+  } @else {
+    @return $lines + 1;
+  }
+}
+
+// Adjusts a block to have different line heights to maintain the rhythm.
+// $lines specifies how many multiples of the baseline rhythm each line of this font should use up.
+// It does not have to be an integer, but it defaults to the smallest integer that is large enough to fit the font.
+@mixin adjust-leading-to($lines) {
+  // if $support
+  //   // Round the pixels down to nearest integer.
+  //   line-height: floor($lines * $base-line-height)
+
+  line-height: calc.calculates-rhythm-units($lines);
+}
+
+// Adjusts a block to have a different font size and line height to maintain the rhythm.
+// $lines specifies how many multiples of the baseline rhythm each line of this font should use up.
+// It does not have to be an integer, but it defaults to the smallest integer that is large enough to fit the font.
+
+@mixin adjust-font-size-to($to-size, $lines: lines-for-font-size($to-size)) {
+  // if $support
+  // font-size: $to-size
+  font-size: utils.rem($to-size);
+
+  @include adjust-leading-to($lines);
+}

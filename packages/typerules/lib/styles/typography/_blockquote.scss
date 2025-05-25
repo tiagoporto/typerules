@@ -1,0 +1,34 @@
+@use '../../variables' as var;
+@use '../../utils';
+
+@mixin blockquote() {
+  blockquote {
+    @include utils.apply-rhythm(1, margin-block-start);
+    @include utils.apply-rhythm(1, margin-block-end);
+    @include utils.apply-rhythm(1.5, margin-inline-start);
+    @include utils.apply-rhythm(0, margin-inline-end);
+  }
+}
+
+// blockquote {
+//   margin-top: emRhythm(4);
+//   margin-bottom: emRhythm(4);
+//   margin-left: 0;
+//   padding-top: 0;
+//   padding-bottom: 0;
+//   padding-left: emRhythm(4);
+//   border-left: $base-vertical-unit solid lighten(#000, 50%);
+//   font-family: $font-serif;
+
+//   p {
+//     margin-bottom: emRhythm(2);
+//   }
+
+//   footer {
+//     cite {
+//       &:before {
+//         content: " – ";
+//       }
+//     }
+//   }
+// }

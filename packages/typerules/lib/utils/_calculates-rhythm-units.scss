@@ -1,0 +1,7 @@
+@use './rem' as utils;
+@use '../variables' as var;
+
+// Calculates rhythm units.
+@function calculates-rhythm-units($lines: 1, $offset: 0) {
+  @return utils.rem($lines * var.$base-line-height - $offset);
+}

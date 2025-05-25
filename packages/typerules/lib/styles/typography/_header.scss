@@ -1,0 +1,82 @@
+@use 'sass:list';
+@use 'sass:map';
+@use '../../variables' as var;
+@use '../../vertical-rhythm' as rhythm;
+@use '../../utils';
+
+@mixin header() {
+  @for $i from 1 through 6 {
+    $selector-list: h#{$i};
+
+    @if var.$generate-modular-classes {
+      $selector-list: list.append($selector-list, ', .h#{$i}');
+    }
+
+    #{$selector-list} {
+      @include utils.adjust-font-size-to(map.get(var.$header-size, 'h#{$i}'));
+      @include rhythm.rhythm-margins(1, 1);
+    }
+  }
+}
+
+// [1] Applies a margin bottom that is a multiple of the vertical grid in EMs.
+// The first argument is the font size context and the second is multiple of the
+// vertical grid unit.
+// [2] Sets the type to one of the modular scale values and the second argument
+// sets a unitless line-height as a multiple of the vertical grid.
+// [3] A generic media query for tablet size ranges.
+// [4] Applies a margin bottom that is the same vertical grid value as the mobile
+// first rule.
+// [5] Sets the type to one of the modular scale values and the second argument
+// sets a unitless line-height as a multiple of the vertical grid.
+// h1, .h1 {
+//   margin-bottom: emRhythm(1, $ms-up2); // [1]
+//   setType(6, $ms-up2); // [2]
+
+//   @media (min-width: 43.75em) {
+//     // [3]
+//     margin-bottom: emRhythm(1, $ms-up3); // [4]
+//     setType(8, $ms-up3); // [5]
+//   }
+
+//   @media (min-width: 56.25em) {
+//     margin-bottom: emRhythm(1, $ms-up4);
+//     setType(10, $ms-up4);
+//   }
+// }
+
+// h2, .h2 {
+//   margin-bottom: emRhythm(1, $ms-up1);
+//   setType(5, $ms-up1);
+
+//   @media (min-width: 43.75em) {
+//     margin-bottom: emRhythm(1, $ms-up2);
+//     setType(6, $ms-up2)
+//   }
+
+//   @media (min-width: 56.25em) {
+//     margin-bottom: emRhythm(1, $ms-up3);
+//     setType(8, $ms-up3);
+//   }
+// }
+
+// h3, .h3 {
+//   margin-bottom: emRhythm(1, $ms-up1);
+//   setType(5, $ms-up1);
+
+//   @media (min-width: 56.25em) {
+//     margin-bottom: emRhythm(1, $ms-up2);
+//     setType(6, $ms-up2);
+//   }
+// }
+
+// h4, .h4 {
+//   margin-bottom: emRhythm(1, $ms-up1);
+//   setType(5, $ms-up1);
+// }
+
+// h5, .h5,
+// h6, .h6 {
+//   margin-bottom: emRhythm(1);
+//   setType(4);
+// }
