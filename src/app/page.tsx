@@ -1,6 +1,4 @@
-import React from 'react'
-
-function App() {
+export default function Home() {
   return (
     <>
       <header role="banner">
@@ -14,18 +12,16 @@ function App() {
       <main>
         <h1>Adjust font size to 36</h1>
         <h2>
-          Adjust font size to 36 Adjust font size to 36 Adjust font size to 36
-          Adjust font size to 36 Adjust font size to 36 Adjust font size to 36
-          Adjust font size to 36
+          Adjust font size to 32 Adjust font size to 32 Adjust font size to 32
+          Adjust font size to 32 Adjust font size to 32
         </h2>
         <h3>
-          Adjust font size to 36 Adjust font size to 36 Adjust font size to 36
-          Adjust font size to 36 Adjust font size to 36 Adjust font size to 36
-          Adjust font size to 36
+          Adjust font size to 30 Adjust font size to 30 Adjust font size to 30
+          Adjust font size to 30 Adjust font size to 30
         </h3>
-        <h4>Adjust font size to 36</h4>
-        <h5>h5.Swill Boilerplate</h5>
-        <h6>h6.Swill Boilerplate</h6>
+        <h4>Adjust font size to 28 Adjust font size to 28</h4>
+        <h5>Adjust font size to 24 Adjust font size to 24</h5>
+        <h6>Adjust font size to 20 Adjust font size to 20</h6>
 
         <div />
         <p>
@@ -59,7 +55,7 @@ function App() {
         <p>
           <del>Lorem ipsum dolor sit amet.</del>
         </p>
-        <p>
+        {/* <p>
           <small>
             Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur
             adipisicing elit. Perspiciatis, modi, exercitationem. Tempora
@@ -69,16 +65,21 @@ function App() {
             officiis repudiandae eius excepturi consectetur natus reiciendis at!
             Expedita, molestias.
           </small>
-        </p>
+        </p> */}
         <blockquote>
-          <p>
-            The <kbd>&lt;blockquote&gt;</kbd> tag specifies a section that is
-            quoted from another source. Lorem ipsum dolor sit amet, consectetur
-            adipisicing elit. Atque inventore aspernatur eligendi facere culpa
-            in dolorem, assumenda deserunt omnis provident.
-          </p>
-          <footer>Lorem ipsum dolor sit amet.</footer>
+          The tag specifies a section that is quoted from another source. Lorem
+          ipsum dolor sit amet, consectetur adipisicing elit. Atque inventore
+          aspernatur eligendi facere culpa in dolorem, assumenda deserunt omnis
+          provident. The tag specifies a section that is quoted from another
+          source. <kbd>&lt;blockquote&gt;</kbd> Lorem ipsum dolor sit amet,
+          consectetur adipisicing elit. Atque inventore aspernatur eligendi
+          facere culpa in dolorem, assumenda deserunt omnis provident.
         </blockquote>
+        <p>
+          The <kbd>&lt;blockquote&gt;</kbd> tag specifies a section that is
+          quoted from another source. Lorem ipsum dolor sit amet, consectetur
+          adipisicing elit. Atque inventore aspernatur
+        </p>
         <code>
           &lt;div&gt; &lt;input type="text" placeholder="It's just a code
           example"&gt; &lt;/div&gt;
@@ -224,66 +225,66 @@ function App() {
           <fieldset>
             <legend>My Semantic Form</legend>
             <p>
-              <label for="username">Username*</label>
+              <label htmlFor="username">Username*</label>
               <input
                 id="username"
                 type="text"
                 name="username"
-                maxlength="10"
+                maxLength={10}
                 aria-required="true"
                 required
               />
             </p>
 
             <p>
-              <label for="email">Email*</label>
+              <label htmlFor="email">Email*</label>
               <input id="email" type="email" name="email" required />
             </p>
 
             <p>
-              <label for="disabled">Disabled</label>
+              <label htmlFor="disabled">Disabled</label>
               <input id="disabled" type="text" name="disabled" disabled />
             </p>
 
             <p>
-              <label for="number">Number</label>
+              <label htmlFor="number">Number</label>
               <input id="number" type="number" name="number" min="1" max="5" />
             </p>
 
             <p>
-              <label for="birthday">Birthday</label>
+              <label htmlFor="birthday">Birthday</label>
               <input
                 id="birthday"
                 type="text"
-                maxlength="10"
+                maxLength={10}
                 name="birthday"
                 pattern="[0-9]{2}\/[0-9]{2}\/[0-9]{4}$"
               />
             </p>
 
             <p>
-              <label for="hour">Hour</label>
+              <label htmlFor="hour">Hour</label>
               <input
                 id="hour"
                 type="text"
-                maxlength="8"
+                maxLength={8}
                 name="hour"
                 pattern="[0-9]{2}:[0-9]{2} [0-9]{2}$"
               />
             </p>
 
             <p>
-              <label for="hour">Range</label>
+              <label htmlFor="hour">Range</label>
               <input type="range" name="points" min="0" max="10" />
             </p>
 
             <p>
-              <label for="phone">Phone</label>
+              <label htmlFor="phone">Phone</label>
               <input
                 id="phone"
                 type="text"
                 name="phone"
-                maxlength="15"
+                maxLength={15}
                 pattern="\([0-9]{2}\) [0-9]{4,6}-[0-9]{3,4}$"
               />
             </p>
@@ -291,7 +292,7 @@ function App() {
             <p>
               <label>Sex</label>
               <label>
-                <input type="radio" name="sex" value="male" checked />
+                <input type="radio" name="sex" value="male" defaultChecked />
                 Male
               </label>
               <label>
@@ -328,8 +329,8 @@ function App() {
             </p>
 
             <p>
-              <label for="comment">Comment</label>
-              <textarea id="comment" name="comment" rows="3" cols="50" />
+              <label htmlFor="comment">Comment</label>
+              <textarea id="comment" name="comment" rows={3} cols={50} />
             </p>
             <p>
               <input type="file" />
@@ -339,7 +340,7 @@ function App() {
 
           <fieldset>
             <p>
-              <label for="password">Password</label>
+              <label htmlFor="password">Password</label>
               <input id="password" type="password" name="password" />
             </p>
           </fieldset>
@@ -352,5 +353,3 @@ function App() {
     </>
   )
 }
-
-export default App
