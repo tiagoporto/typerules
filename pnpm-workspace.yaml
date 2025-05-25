@@ -1,0 +1,5 @@
+packages:
+  - packages/**
+ignoredBuiltDependencies:
+  - core-js
+  - core-js-pure
