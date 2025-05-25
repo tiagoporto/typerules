@@ -45,6 +45,19 @@ jobs:
         if: success() || failure()
         run: pnpm typecheck
 
+      # - name: Lint Styles
+      #   if: success() || failure()
+      #   run: pnpm lint:styles
+
       # - name: Lint
       #   if: success() || failure()
       #   run: pnpm lint
+
+      - name: Build Demo
+        if: success() || failure()
+        run: pnpm build
+
+      - name: Pack Libs
+        if: success() || failure()
+        run: |
+          pnpm pack --recursive
