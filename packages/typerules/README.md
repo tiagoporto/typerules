@@ -10,4 +10,4 @@ _Work in Progress_
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE).
+Typerules © 2017 by Tiago Porto is licensed under [MIT License](LICENSE).
