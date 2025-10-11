@@ -20,7 +20,7 @@
   "type": "module",
   "scripts": {
     "preinstall": "npx only-allow pnpm",
-    "postinstall": "$CI = true || (dependabot-config && editor-config)",
+    "postinstall": "$CI = true || editor-config",
     "prepare": "husky",
     "dev": "next dev",
     "build": "next build",
@@ -39,7 +39,6 @@
     "@anolilab/semantic-release-pnpm": "^1.1.11",
     "@commitlint/cli": "^19.7.1",
     "@commitlint/config-conventional": "^19.7.1",
-    "@tiagoporto/dependabot-config": "^2.0.0",
     "@tiagoporto/editor-config": "^2.0.0",
     "@tiagoporto/eslint-config": "^4.6.1",
     "@tiagoporto/prettier-config": "^2.0.0",
