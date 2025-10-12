@@ -1,3 +1,5 @@
+import { env } from 'node:process'
+
 const config = {
   extends: 'semantic-release-monorepo',
   branches: [
@@ -33,13 +35,13 @@ const config = {
   ],
 }
 
-if (process.env.BRANCH === 'main') {
+if (env.BRANCH === 'main') {
   config.plugins.push('@semantic-release/release-notes-generator')
 }
 
 config.plugins.push('@anolilab/semantic-release-pnpm')
 
-if (process.env.BRANCH === 'main') {
+if (env.BRANCH === 'main') {
   config.plugins.push('@semantic-release/github')
 }
 

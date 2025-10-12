@@ -25,24 +25,42 @@ export default function Home() {
 
         <div />
         <p>
-          First paragraph, <strong>consectetur</strong> adipisicing elit. Ipsam{' '}
-          <kbd>kbd tag</kbd> dolore deserunt laboriosam, perferendis quia earum{' '}
-          <kbd>kbd tag</kbd> quam accusamus consequuntur explicabo modi debitis{' '}
-          <mark>placeat</mark> eveniet blanditiis esse incidunt commodi
+          First paragraph,
+          {' '}
+          <strong>consectetur</strong>
+          {' '}
+          adipisicing elit. Ipsam
+          {' '}
+          <kbd>kbd tag</kbd>
+          {' '}
+          dolore deserunt laboriosam, perferendis quia earum
+          {' '}
+          <kbd>kbd tag</kbd>
+          {' '}
+          quam accusamus consequuntur explicabo modi debitis
+          {' '}
+          <mark>placeat</mark>
+          {' '}
+          eveniet blanditiis esse incidunt commodi
           assumenda. Enim repellendus vitae eaque distinctio velit quia modi,
           non maxime reiciendis amet ab temporibus! Aliquid illo natus,
           architecto minima saepe cupiditate autem dolor, odit! Dolorem beatae
           est iste incidunt quaerat delectus nobis error dignissimos numquam,
-          voluptatem necessitatibus <abbr title="Swill Boilerplate">SWBP</abbr>{' '}
-          exercitationem at sunt quidem voluptatibus nam facilis veniam nulla
-          odit dolorum pariatur, laboriosam?{' '}
+          voluptatem necessitatibus
+          <abbr title="Swill Boilerplate">SWBP</abbr>
+          {' '}
+          exercitationem at sunt
+          quidem voluptatibus nam facilis veniam nulla odit dolorum pariatur,
+          laboriosam?
+          {' '}
           <em>
             Quam nisi non delectus perspiciatis veritatis harum iure maxime,
             quae voluptatibus.
           </em>
         </p>
         <p>
-          Second paragraph,{' '}
+          Second paragraph,
+          {' '}
           <a href="https://www.npmjs.com/package/generator-swill-boilerplate">
             this is a link to NPM boilerplate package
           </a>
@@ -71,12 +89,20 @@ export default function Home() {
           ipsum dolor sit amet, consectetur adipisicing elit. Atque inventore
           aspernatur eligendi facere culpa in dolorem, assumenda deserunt omnis
           provident. The tag specifies a section that is quoted from another
-          source. <kbd>&lt;blockquote&gt;</kbd> Lorem ipsum dolor sit amet,
+          source.
+          {' '}
+          <kbd>&lt;blockquote&gt;</kbd>
+          {' '}
+          Lorem ipsum dolor sit amet,
           consectetur adipisicing elit. Atque inventore aspernatur eligendi
           facere culpa in dolorem, assumenda deserunt omnis provident.
         </blockquote>
         <p>
-          The <kbd>&lt;blockquote&gt;</kbd> tag specifies a section that is
+          The
+          {' '}
+          <kbd>&lt;blockquote&gt;</kbd>
+          {' '}
+          tag specifies a section that is
           quoted from another source. Lorem ipsum dolor sit amet, consectetur
           adipisicing elit. Atque inventore aspernatur
         </p>
@@ -86,7 +112,10 @@ export default function Home() {
         </code>
         <pre />
         <p>
-          Lorem ipsum dolor sit amet, <code>Inline code</code>. Maxime,
+          Lorem ipsum dolor sit amet,
+          {' '}
+          <code>Inline code</code>
+          . Maxime,
           quibusdam.
         </p>
         <pre>
@@ -205,8 +234,10 @@ export default function Home() {
         <address>
           <strong>Swill boilerplate</strong>
           <br />
-          Website:{' '}
-          <a href="http://www.swillboileplate.rocks">swillboileplate.rocks</a>.
+          Website:
+          {' '}
+          <a href="http://www.swillboileplate.rocks">swillboileplate.rocks</a>
+          .
           <br />
           Tiago Porto
           <br />
@@ -304,12 +335,12 @@ export default function Home() {
             <p>
               <label>Checkbox</label>
               <label>
-                <input type="checkbox" name="vehicle" value="Bike" /> I have a
-                bike
+                <input type="checkbox" name="vehicle" value="Bike" />
+                I have a bike
               </label>
               <label>
-                <input type="checkbox" name="vehicle" value="Car" /> I have a
-                car
+                <input type="checkbox" name="vehicle" value="Car" />
+                I have a car
               </label>
             </p>
 
