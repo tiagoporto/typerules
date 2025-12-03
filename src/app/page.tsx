@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 export default function Home() {
   return (
     <>
@@ -159,8 +161,8 @@ export default function Home() {
           maxime!
         </p>
         <figure>
-          <img
-            src="img_pulpit.jpg"
+          <Image
+            src="https://picsum.photos/200/300"
             alt="The Pulpit Rock"
             width="304"
             height="228"
@@ -320,8 +322,9 @@ export default function Home() {
               />
             </p>
 
-            <p>
-              <label>Sex</label>
+            <fieldset>
+              <legend>Sex</legend>
+
               <label>
                 <input type="radio" name="sex" value="male" defaultChecked />
                 Male
@@ -330,10 +333,11 @@ export default function Home() {
                 <input type="radio" name="sex" value="female" />
                 Female
               </label>
-            </p>
+            </fieldset>
 
-            <p>
-              <label>Checkbox</label>
+            <fieldset>
+              <legend>Vehicle</legend>
+
               <label>
                 <input type="checkbox" name="vehicle" value="Bike" />
                 I have a bike
@@ -342,10 +346,11 @@ export default function Home() {
                 <input type="checkbox" name="vehicle" value="Car" />
                 I have a car
               </label>
-            </p>
+            </fieldset>
 
-            <p>
-              <label id="choose2">Drop</label>
+            <fieldset>
+              <legend>Drop</legend>
+
               <select name="choose">
                 <optgroup label="Front-end">
                   <option value="html">HTML</option>
@@ -357,7 +362,7 @@ export default function Home() {
                   <option value="php">PHP</option>
                 </optgroup>
               </select>
-            </p>
+            </fieldset>
 
             <p>
               <label htmlFor="comment">Comment</label>

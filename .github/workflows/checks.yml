@@ -50,9 +50,9 @@ jobs:
       #   if: success() || failure()
       #   run: pnpm lint:styles
 
-      # - name: Lint
-      #   if: success() || failure()
-      #   run: pnpm lint
+      - name: Lint
+        if: success() || failure()
+        run: pnpm lint
 
       - name: Build Demo
         if: success() || failure()
