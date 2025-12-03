@@ -11,15 +11,21 @@
     "url": "https://github.com/tiagoporto/typerules.git"
   },
   "license": "MIT",
-  "engines": {
-    "node": ">=23",
-    "npm": "uses pnpm",
-    "pnpm": ">=10"
+  "devEngines": {
+    "runtime": {
+      "name": "node",
+      "version": ">=24",
+      "onFail": "error"
+    },
+    "packageManager": {
+      "name": "pnpm",
+      "version": ">=10",
+      "onFail": "error"
+    }
   },
-  "packageManager": "pnpm@10.11.0",
+  "packageManager": "pnpm@10.23.0",
   "type": "module",
   "scripts": {
-    "preinstall": "npx only-allow pnpm",
     "postinstall": "$CI = true || editor-config",
     "dev": "next dev --turbopack",
     "build": "next build --turbopack",
