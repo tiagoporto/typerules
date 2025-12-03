@@ -1,6 +1,13 @@
 name: Publish Packages
 
-on: workflow_dispatch
+on:
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: Dry-run
+        required: false
+        type: boolean
+        default: true
 
 permissions:
   contents: read
@@ -19,19 +26,20 @@ jobs:
     permissions:
       contents: write # to be able to publish a GitHub release
       issues: write # to be able to comment on released issues
+      pull-requests: write # to be able to comment on released pull requests
       id-token: write # to enable use of OIDC for npm provenance
       attestations: write # necessary to persist the attestation
-    needs: [checks]
     # needs: [checks, unit_tests]
+    needs: [checks]
     steps:
       - name: Checkout
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
 
       - name: Install pnpm
-        uses: pnpm/action-setup@a7487c7e89a18df4991f7f222e4898a00d66ddda
+        uses: pnpm/action-setup@41ff72655975bd51cab0327fa583b6e92b6d3061
 
       - name: Setup node
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v6
         with:
           node-version-file: .nvmrc
           cache: pnpm
@@ -39,21 +47,18 @@ jobs:
       - name: Install Dependencies
         run: pnpm install --frozen-lockfile --ignore-scripts
 
-      - name: Configure .npmrc
-        run: echo "//registry.npmjs.org/:_authToken=\${NPM_TOKEN}" >> .npmrc
-
-      - name: Bump version, add tag, and publish github release
+      - name: Bump versions, add tags, publish packages and create github releases
         env:
           BRANCH: ${{github.ref_name}}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
           NPM_CONFIG_PROVENANCE: true
-        run: pnpm recursive run release
+        run: pnpm exec multi-semantic-release --dry-run=${{ github.event.inputs.dry_run }}
 
       - name: Remove node_modules
         run: |
           rm -rf packages/**/node_modules/
 
-      - uses: actions/attest-build-provenance@v2
+      - uses: actions/attest-build-provenance@v3
         with:
           subject-path: packages
