@@ -1,12 +1,12 @@
-import nuxt from '@next/eslint-plugin-next'
+import eslintNextPlugin from '@next/eslint-plugin-next'
 import tpConfig from '@tiagoporto/eslint-config'
 
 /** @type {import('eslint').Linter.Config[]} */
 export default [
   { ignores: ['old/', 'public/index.html'] },
   ...tpConfig.configs.react,
-  nuxt.flatConfig.recommended,
-  nuxt.flatConfig.coreWebVitals,
+  eslintNextPlugin.configs.recommended,
+  eslintNextPlugin.configs['core-web-vitals'],
   {
     files: ['**/*.tsx'],
     rules: {
