@@ -21,7 +21,6 @@
   "scripts": {
     "preinstall": "npx only-allow pnpm",
     "postinstall": "$CI = true || editor-config",
-    "prepare": "husky",
     "dev": "next dev --turbopack",
     "build": "next build --turbopack",
     "start": "next start",
@@ -50,8 +49,7 @@
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9.37.0",
-    "husky": "^9.1.7",
-    "lint-staged": "^15.4.3",
+    "lefthook": "^2.0.5",
     "next": "15.4.7",
     "prettier": "^3.6.2",
     "react": "^19.0.0",
