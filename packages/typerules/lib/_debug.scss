@@ -1,5 +1,6 @@
-@use 'sass:map';
 @use 'sass:color';
+@use 'sass:map';
+@use 'sass:math';
 @use './variables' as var;
 @use './utils' as utils;
 
@@ -52,7 +53,9 @@ $debug-color-line: (
           rgb(0 0 0 / 0%) 1px
         );
         background-size: 100%
-          utils.rem(var.$base-line-height / map.get($debug, 'subdivisions'));
+          utils.rem(
+            math.div(var.$base-line-height, map.get($debug, 'subdivisions'))
+          );
       }
     }
   }
