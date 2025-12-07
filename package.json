@@ -44,8 +44,8 @@
   "devDependencies": {
     "@anolilab/multi-semantic-release": "^3.2.2",
     "@anolilab/semantic-release-pnpm": "^3.2.2",
-    "@commitlint/cli": "^19.7.1",
-    "@commitlint/config-conventional": "^19.7.1",
+    "@commitlint/cli": "^20.2.0",
+    "@commitlint/config-conventional": "^20.2.0",
     "@next/eslint-plugin-next": "^16.0.6",
     "@tiagoporto/editor-config": "^2.1.0",
     "@tiagoporto/eslint-config": "^6.3.1",
