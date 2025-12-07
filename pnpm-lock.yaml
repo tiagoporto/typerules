@@ -12,11 +12,11 @@ importers:
   .:
     devDependencies:
       '@anolilab/multi-semantic-release':
-        specifier: ^3.0.0
-        version: 3.1.0(semantic-release@25.0.2(typescript@5.9.3))(typescript@5.9.3)
+        specifier: ^3.2.2
+        version: 3.2.2(semantic-release@25.0.2(typescript@5.9.3))(typescript@5.9.3)
       '@anolilab/semantic-release-pnpm':
-        specifier: ^3.0.0
-        version: 3.1.0(@types/node@20.19.23)(yaml@2.8.2)
+        specifier: ^3.2.2
+        version: 3.2.2(@types/node@20.19.23)(yaml@2.8.2)
       '@commitlint/cli':
         specifier: ^19.7.1
         version: 19.8.1(@types/node@20.19.23)(typescript@5.9.3)
@@ -106,20 +106,20 @@ packages:
   '@actions/io@1.1.3':
     resolution: {integrity: sha512-wi9JjgKLYS7U/z8PPbco+PvTb/nRWjeoFlJ1Qer83k/3C5PHQi28hiVdeE2kHXmIL99mQFawx8qt/JPjZilJ8Q==}
 
-  '@anolilab/multi-semantic-release@3.1.0':
-    resolution: {integrity: sha512-0ZO0Fg1xCdujQWG5eEVCbrN6DBjnBhTxiSs5j/69WCsMLZ1708vF/tu839Zbe3YCO7w7iwso7zfg+AnWb2EorA==}
+  '@anolilab/multi-semantic-release@3.2.2':
+    resolution: {integrity: sha512-Lt5f6F9Q82zXRbfmOS7CuLQ+ZsA7Qi4nFYVr0yGPnuisfntNxtQmpF9t0qo1HFKov76a9oYnEpqKif+FGLBEvw==}
     engines: {node: ^22.14.0 || >=24.10.0}
     os: [darwin, linux, win32]
     hasBin: true
     peerDependencies:
       semantic-release: '>=24'
 
-  '@anolilab/rc@3.1.0':
-    resolution: {integrity: sha512-v2lyA2sgmknxOGiqWvHuEr72y641oD49FJ6XnhEWe9n9Jb48qbkA3ndVFwcAR7Xq1VDPSjiRbB2u+AT7oHofRg==}
+  '@anolilab/rc@3.2.0':
+    resolution: {integrity: sha512-JlyioHSFKJ0DugoCtPSvZJW2SKLPgaM422DTHlgwKw+Q/Ibk34lBUAZEZVuPsYckvdOu64jXwqNsmaGGQUw2Tg==}
     engines: {node: ^22.14.0 || >=24.10.0}
 
-  '@anolilab/semantic-release-pnpm@3.1.0':
-    resolution: {integrity: sha512-ibAvoCyl1mWIAZNu8xIA8N6QnumSTQRUtndg9pp1dYo7SpRWk0WO2stXz5lBHO5+oiThJvlm56LV4HRDVgOoag==}
+  '@anolilab/semantic-release-pnpm@3.2.2':
+    resolution: {integrity: sha512-Rov3lFxfJ8hEt07o6UZ7TsXfs5/hx/D+3o8mH1UIf7h3dLO761PlC3lWz/7GdqMN362o+VBywdlqJbWPN//SPQ==}
     engines: {node: ^22.14.0 || >=24.10.0}
 
   '@antfu/install-pkg@1.1.0':
@@ -1336,6 +1336,10 @@ packages:
     resolution: {integrity: sha512-7HSX4QQb4CspciLpVFwyRe79O3xsIZDDLER21kERQ71oaPodF8jL725AgJMFAYbooIqolJoRLuM81SpeUkpkvA==}
     engines: {node: '>=12'}
 
+  ansi-regex@6.2.2:
+    resolution: {integrity: sha512-Bq3SmSpyFHaWjPk8If9yc6svM8c56dB5BAtW4Qbw5jHTwwXXcTLoRMkpDJp6VL0XzlWaCHTXrkFURMYmD0sLqg==}
+    engines: {node: '>=12'}
+
   ansi-styles@3.2.1:
     resolution: {integrity: sha512-VT0ZI6kZRdTh8YyJw3SMbYm/u+NqfsAxEpWO0Pf9sq8/e94WxxOpPKx9FR1FlyCtOVDNOQ+8ntlqFxiRc+r5qA==}
     engines: {node: '>=4'}
@@ -1346,6 +1350,10 @@ packages:
 
   ansi-styles@6.2.1:
     resolution: {integrity: sha512-bN798gFfQX+viw3R7yrGWRqnrN2oRkEkUjjl4JNn4E8GxxbjtG3FbrEIIY3l8/hrwUwIeCZvi4QuOTP4MErVug==}
+    engines: {node: '>=12'}
+
+  ansi-styles@6.2.3:
+    resolution: {integrity: sha512-4Dj6M28JB+oAH8kFkTLUo+a2jwOFkuqb3yucU0CANcRRUbxS0cP0nZYCGjcc3BNXwRIsUVmDGgzawme7zvJHvg==}
     engines: {node: '>=12'}
 
   any-promise@1.3.0:
@@ -1924,6 +1932,9 @@ packages:
   emoji-regex@10.4.0:
     resolution: {integrity: sha512-EC+0oUMY1Rqm4O6LLrgjtYDvcVYTy7chDnM4Q7030tP4Kwj3u/pR6gP9ygnp2CJMK5Gq+9Q2oqmrFJAz01DXjw==}
 
+  emoji-regex@10.6.0:
+    resolution: {integrity: sha512-toUI84YS5YmxW219erniWD0CIVOo46xGKColeNQRgOzDorgBi1v4D71/OFzgD9GO2UGKIv1C3Sp8DAn0+j5w7A==}
+
   emoji-regex@8.0.0:
     resolution: {integrity: sha512-MSjYzcWNOA0ewAHpz0MxpYFvwg6yjy1NG3xteoqz644VCo/RPgnr1/GGt+ic3iJTzQ8Eu3TdM14SawnVUmGE6A==}
 
@@ -1972,6 +1983,9 @@ packages:
 
   error-ex@1.3.2:
     resolution: {integrity: sha512-7dFHNmqeFSEt2ZBsCriorKnn3Z2pj+fd9kmI6QoWw4//DL+icEBfc0U7qJCisqrTsKTjw4fNFy2pW9OqStD84g==}
+
+  error-ex@1.3.4:
+    resolution: {integrity: sha512-sqQamAnR14VgCr1A618A3sGrygcpK+HEbenA/HiEAkkUwcZIIB/tgWqHFxWgOyDh4nB4JCRimh79dR5Ywc9MDQ==}
 
   es-abstract@1.24.0:
     resolution: {integrity: sha512-WSzPgsdLtTcQwm4CROfS5ju2Wa1QQcVeT37jFjYzdFz1r9ahadC8B8/a4qxJxM+09F18iumCdRmlr96ZYkQvEg==}
@@ -2258,6 +2272,10 @@ packages:
 
   execa@9.6.0:
     resolution: {integrity: sha512-jpWzZ1ZhwUmeWRhS7Qv3mhpOhLfwI+uAX4e5fOcXqwMR7EcJ0pj2kV1CVzHVMX/LphnKWD3LObjZCoJ71lKpHw==}
+    engines: {node: ^18.19.0 || >=20.5.0}
+
+  execa@9.6.1:
+    resolution: {integrity: sha512-9Be3ZoN4LmYR90tUoVu2te2BsbzHfhJyfEiAVfz7N5/zv+jduIfLrV2xdQXOHbaD6KgpGdO9PRPM1Y4Q9QkPkA==}
     engines: {node: ^18.19.0 || >=20.5.0}
 
   extend@3.0.2:
@@ -4639,6 +4657,10 @@ packages:
     resolution: {integrity: sha512-iq6eVVI64nQQTRYq2KtEg2d2uU7LElhTJwsH4YzIHZshxlgZms/wIc4VoDQTlG/IvVIrBKG06CrZnp0qv7hkcQ==}
     engines: {node: '>=12'}
 
+  strip-ansi@7.1.2:
+    resolution: {integrity: sha512-gmBGslpoQJtgnMAvOVqGZpEz9dyoKTCzy2nfz/n8aIFhN/jCE/rCmcxabB6jOOHV+0WNnylOxaxBQPSvcWklhA==}
+    engines: {node: '>=12'}
+
   strip-bom@3.0.0:
     resolution: {integrity: sha512-vavAMRXOgBVNF6nyEEmL3DBK19iRpDcoIwW+swQ+CbGiu7lju6t+JklA1MHweoWtadgt4ISVUsXLyDq34ddcwA==}
     engines: {node: '>=4'}
@@ -4830,6 +4852,10 @@ packages:
   tinyexec@1.0.1:
     resolution: {integrity: sha512-5uC6DDlmeqiOwCPmK9jMSdOuZTh8bU39Ys6yidB+UTt5hfZUPGAypSgFRiEp+jbi9qH40BLDvy85jIU88wKSqw==}
 
+  tinyexec@1.0.2:
+    resolution: {integrity: sha512-W/KYk+NFhkmsYpuHq5JykngiOCnxeVL8v8dFnqxSD8qEEdRfXk1SDM6JzNqcERbcGYj9tMrDQBYV9cjgnunFIg==}
+    engines: {node: '>=18'}
+
   tinyglobby@0.2.15:
     resolution: {integrity: sha512-j2Zq4NyQYG5XMST4cbs02Ak8iJUdxRM0XI5QyxXuZOzKOINmWurp3smXu3y5wDcJrptwpSjgXHzIQxR0omXljQ==}
     engines: {node: '>=12.0.0'}
@@ -4905,6 +4931,10 @@ packages:
 
   type-fest@5.3.0:
     resolution: {integrity: sha512-d9CwU93nN0IA1QL+GSNDdwLAu1Ew5ZjTwupvedwg3WdfoH6pIDvYQ2hV0Uc2nKBLPq7NB5apCx57MLS5qlmO5g==}
+    engines: {node: '>=20'}
+
+  type-fest@5.3.1:
+    resolution: {integrity: sha512-VCn+LMHbd4t6sF3wfU/+HKT63C9OoyrSIf4b+vtWHpt2U7/4InZG467YDNMFMR70DdHjAdpPWmw2lzRdg0Xqqg==}
     engines: {node: '>=20'}
 
   typed-array-buffer@1.0.3:
@@ -5267,7 +5297,7 @@ snapshots:
 
   '@actions/io@1.1.3': {}
 
-  '@anolilab/multi-semantic-release@3.1.0(semantic-release@25.0.2(typescript@5.9.3))(typescript@5.9.3)':
+  '@anolilab/multi-semantic-release@3.2.2(semantic-release@25.0.2(typescript@5.9.3))(typescript@5.9.3)':
     dependencies:
       '@semrel-extra/topo': 1.14.1
       '@visulima/fs': 4.1.0(yaml@2.8.2)
@@ -5276,7 +5306,7 @@ snapshots:
       debug: 4.4.3
       detect-indent: 7.0.2
       detect-newline: 4.0.1
-      execa: 9.6.0
+      execa: 9.6.1
       git-log-parser: 1.2.1
       lodash-es: 4.17.21
       resolve-from: 5.0.0
@@ -5290,7 +5320,7 @@ snapshots:
       - supports-color
       - typescript
 
-  '@anolilab/rc@3.1.0(yaml@2.8.2)':
+  '@anolilab/rc@3.2.0(yaml@2.8.2)':
     dependencies:
       '@visulima/fs': 4.1.0(yaml@2.8.2)
       '@visulima/path': 2.0.5
@@ -5299,28 +5329,30 @@ snapshots:
     transitivePeerDependencies:
       - yaml
 
-  '@anolilab/semantic-release-pnpm@3.1.0(@types/node@20.19.23)(yaml@2.8.2)':
+  '@anolilab/semantic-release-pnpm@3.2.2(@types/node@20.19.23)(yaml@2.8.2)':
     dependencies:
       '@actions/core': 1.11.1
-      '@anolilab/rc': 3.1.0(yaml@2.8.2)
+      '@anolilab/rc': 3.2.0(yaml@2.8.2)
       '@semantic-release/error': 4.0.0
       '@visulima/fs': 4.1.0(yaml@2.8.2)
       '@visulima/package': 4.1.7(@types/node@20.19.23)
       '@visulima/path': 2.0.5
+      debug: 4.4.3
       env-ci: 11.2.0
-      execa: 9.6.0
+      execa: 9.6.1
       ini: 6.0.0
       normalize-url: 8.1.0
       registry-auth-token: 5.1.0
       semver: 7.7.3
     transitivePeerDependencies:
       - '@types/node'
+      - supports-color
       - yaml
 
   '@antfu/install-pkg@1.1.0':
     dependencies:
       package-manager-detector: 1.6.0
-      tinyexec: 1.0.1
+      tinyexec: 1.0.2
 
   '@babel/code-frame@7.27.1':
     dependencies:
@@ -6639,7 +6671,7 @@ snapshots:
   '@visulima/fs@4.1.0(yaml@2.8.2)':
     dependencies:
       '@visulima/path': 2.0.5
-      type-fest: 5.3.0
+      type-fest: 5.3.1
     optionalDependencies:
       yaml: 2.8.2
 
@@ -6710,6 +6742,8 @@ snapshots:
 
   ansi-regex@6.1.0: {}
 
+  ansi-regex@6.2.2: {}
+
   ansi-styles@3.2.1:
     dependencies:
       color-convert: 1.9.3
@@ -6719,6 +6753,8 @@ snapshots:
       color-convert: 2.0.1
 
   ansi-styles@6.2.1: {}
+
+  ansi-styles@6.2.3: {}
 
   any-promise@1.3.0: {}
 
@@ -6998,7 +7034,7 @@ snapshots:
   cliui@9.0.1:
     dependencies:
       string-width: 7.2.0
-      strip-ansi: 7.1.0
+      strip-ansi: 7.1.2
       wrap-ansi: 9.0.2
 
   clone-regexp@3.0.0:
@@ -7307,6 +7343,8 @@ snapshots:
 
   emoji-regex@10.4.0: {}
 
+  emoji-regex@10.6.0: {}
+
   emoji-regex@8.0.0: {}
 
   emoji-regex@9.2.2: {}
@@ -7345,6 +7383,10 @@ snapshots:
   err-code@2.0.3: {}
 
   error-ex@1.3.2:
+    dependencies:
+      is-arrayish: 0.2.1
+
+  error-ex@1.3.4:
     dependencies:
       is-arrayish: 0.2.1
 
@@ -7873,6 +7915,21 @@ snapshots:
       strip-final-newline: 3.0.0
 
   execa@9.6.0:
+    dependencies:
+      '@sindresorhus/merge-streams': 4.0.0
+      cross-spawn: 7.0.6
+      figures: 6.1.0
+      get-stream: 9.0.1
+      human-signals: 8.0.1
+      is-plain-obj: 4.1.0
+      is-stream: 4.0.1
+      npm-run-path: 6.0.0
+      pretty-ms: 9.3.0
+      signal-exit: 4.1.0
+      strip-final-newline: 4.0.0
+      yoctocolors: 2.1.2
+
+  execa@9.6.1:
     dependencies:
       '@sindresorhus/merge-streams': 4.0.0
       cross-spawn: 7.0.6
@@ -9630,13 +9687,13 @@ snapshots:
 
   parse-json@4.0.0:
     dependencies:
-      error-ex: 1.3.2
+      error-ex: 1.3.4
       json-parse-better-errors: 1.0.2
 
   parse-json@5.2.0:
     dependencies:
       '@babel/code-frame': 7.27.1
-      error-ex: 1.3.2
+      error-ex: 1.3.4
       json-parse-even-better-errors: 2.3.1
       lines-and-columns: 1.2.4
 
@@ -10983,9 +11040,9 @@ snapshots:
 
   string-width@7.2.0:
     dependencies:
-      emoji-regex: 10.4.0
+      emoji-regex: 10.6.0
       get-east-asian-width: 1.4.0
-      strip-ansi: 7.1.0
+      strip-ansi: 7.1.2
 
   string.prototype.includes@2.0.1:
     dependencies:
@@ -11038,6 +11095,10 @@ snapshots:
   strip-ansi@7.1.0:
     dependencies:
       ansi-regex: 6.1.0
+
+  strip-ansi@7.1.2:
+    dependencies:
+      ansi-regex: 6.2.2
 
   strip-bom@3.0.0: {}
 
@@ -11248,6 +11309,8 @@ snapshots:
 
   tinyexec@1.0.1: {}
 
+  tinyexec@1.0.2: {}
+
   tinyglobby@0.2.15:
     dependencies:
       fdir: 6.5.0(picomatch@4.0.3)
@@ -11305,6 +11368,10 @@ snapshots:
   type-fest@4.41.0: {}
 
   type-fest@5.3.0:
+    dependencies:
+      tagged-tag: 1.0.0
+
+  type-fest@5.3.1:
     dependencies:
       tagged-tag: 1.0.0
 
@@ -11696,9 +11763,9 @@ snapshots:
 
   wrap-ansi@9.0.2:
     dependencies:
-      ansi-styles: 6.2.1
+      ansi-styles: 6.2.3
       string-width: 7.2.0
-      strip-ansi: 7.1.0
+      strip-ansi: 7.1.2
 
   wrapped@1.0.1:
     dependencies:
